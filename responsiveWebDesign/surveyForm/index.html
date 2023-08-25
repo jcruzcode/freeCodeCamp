@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	    <meta charset="utf-8">
+  	    <meta name="description" content="Your description goes here">
+  	    <meta name="keywords" content="one, two, three">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Free Pizza Form</title>
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+        <img src="https://cdn.glitch.global/0e34717b-740c-4604-a1b6-658870ffd1a6/cover.png?v=1692316422710" alt="A tasty looking pepperoni Pizza2Go logo.">
+        <h1 id="title">Congrats!</h1>
+        <p> You've won a <span>free</span> pizza and delivery!</p>
+        <p id="description">Please complete the form to redeem.</p>
+        
+        <form id="survey-form">
+          <fieldset class="contact">
+            <legend>Contact Information</legend>
+            <label id="name-label" for="name">First Name: <input required id="name" type="text" placeholder="John"></label>
+            <label id="last-name-label" for="last-name">Last Name: <input required id="lname" type="text" placeholder="Wick"></label>
+            <label id="email-label" for="email">Email: <input required id="email" type="email" placeholder="jwick@gmail.com"></label>
+            <label id="phone-number-label" for="phone-number">Phone Number: <input id="phone-number" type="tel"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(808) 867-5309" required></label>
+          </fieldset>
+
+          <fieldset class="delivery">
+            <legend> Delivery Information</legend>
+            <label id="address-label" for="address-type"> Address Type: <br> <select id="address-type" required>
+              <option>Choose One</option>
+              <option>House</option>
+              <option>Apartment</option>
+              <option>Business</option>
+              <option>Campus/Base</option>
+              <option>Other</option>
+            </select></label>
+            <label id="street-label" for="street">Street Address:  <input id="street" type="text"  placeholder="123 Main St." required></label>
+            <label id="number-label" for="number">Suite/Apt #: <input id="number" type="number" min="0" max="1000000" placeholder="1"></label>
+            <label id="zipcode-label" for="zipcode">ZIP Code: <input id="zipcode" type="number" min="0" max="99999" required></label>
+            <label id="city-label" for="city">City:  <input id="city" type="text"  placeholder="Juneau" required></label>
+            <label id="state-label" for="state">State: <input id="state" type="text" placeholder="Alaska" required></label>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Create your Pizza</legend>
+            <label>Pizza Size <br> <select id="dropdown">
+              <option>Choose</option>
+              <option>Small - 10"</option>
+              <option>Medium - 12"</option>
+              <option>Large - 14"</option>
+              <option>XLarge - 16"</option>
+            </select></label>
+
+            <label class="category">Cheese</label>
+            <label><input class="select" type="radio" name="cheese" value="a"> Mozzarella & Provolone</label>
+            <label><input class="select" type="radio" name="cheese" value="b"> Fresh Mozzarella</label>
+            <label><input class="select" type="radio" name="cheese" value="c"> Gruyere</label>
+            <label><input class="select" type="radio" name="cheese" value="d"> Jalapeno Jack</label>
+            
+            <label class="category">Sauce</label>
+            <label><input class="select" type="radio" name="option" value="a"> Marinara</label>
+            <label><input class="select" type="radio" name="option" value="b"> Chipotle</label>
+            <label><input class="select" type="radio" name="option" value="c"> House Sauce</label>
+            <label><input class="select" type="radio" name="option" value="d"> Alfredo</label>
+            
+            <label class="category">Meat</label>
+            <label><input class="select" type="checkbox" name="checkbox" value="1"> Pepperoni</label>
+            <label><input class="select" type="checkbox" name="checkbox" value="2"> Blackened Chicken</label>
+            <label><input class="select" type="checkbox" name="checkbox" value="3"> Italian Sausage</label>
+            <label><input class="select" type="checkbox" name="checkbox" value="4"> Bacon</label>
+            <label><input class="select" type="checkbox" name="checkbox" value="5"> Steak</label>
+
+            <label class="category">Non-Meats</label>
+            <label><input class="select" type="checkbox" name="checkbox" value="1"> Fresh Pineapple</label>
+            <label><input class="select" type="checkbox" name="checkbox" value="2"> Green Peppers</label>
+            <label><input class="select" type="checkbox" name="checkbox" value="3"> Red Onions</label>
+            <label><input class="select" type="checkbox" name="checkbox" value="4"> Jalapenos</label>
+            <label><input class="select" type="checkbox" name="checkbox" value="5"> Black Olives</label>
+
+            <label class="comments">Addtional Comments 
+              <textarea>
+              </textarea> 
+            </label>
+
+            <input id="submit" type="submit" value="submit" >
+          </fieldset>
+
+        </form>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
